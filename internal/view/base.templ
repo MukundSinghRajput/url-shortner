@@ -38,26 +38,43 @@ templ Base(name string) {
 								</button>
 							</div>
 							<div class="mt-5 self-center">
-								<div
-									id="result-bar"
-									class="justify-between items-center p-4 bg-gray-800 rounded-md hidden"
-								>
-									<span id="short-url" class="text-white"></span>
-									<div class="flex items-center space-x-2">
-										<button
-											id="copy"
-											class="px-4 py-2 text-white bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none ml-2"
-										>
-											Copy
-										</button>
-										<button
-											id="redirect"
-											class="px-4 py-2 text-white bg-green-500 rounded-md hover:bg-green-600 focus:outline-none"
-										>
-											Redirect
-										</button>
-									</div>
+								// <div
+								// 	id="result-bar"
+								// 	class="justify-between items-center p-4 bg-gray-800 rounded-md hidden"
+								// >
+								// 	<span id="short-url" class="text-white"></span>
+								// 	<div class="flex items-center space-x-2">
+								// 		<button
+								// 			id="copy"
+								// 			class="px-4 py-2 text-white bg-blue-500 rounded-md hover:bg-blue-600 focus:outline-none ml-2"
+								// 		>
+								// 			Copy
+								// 		</button>
+								// 		<button
+								// 			id="redirect"
+								// 			class="px-4 py-2 text-white bg-green-500 rounded-md hover:bg-green-600 focus:outline-none"
+								// 		>
+								// 			Redirect
+								// 		</button>
+								// 	</div>
+								// </div>
+
+
+								// TODO: 1. Urls sahi jagah dal dena 2. ye haesha show ho rha, isko hidden krdena, short link generate krne ke bad hi show krna
+								//changes from here
+
+								<div id="result-bar" class="relative p-6 border-2 border-dotted border-muted-foreground rounded-2xl bg-card text-card-foreground max-w-2xl mx-auto shadow-lg transition-all duration-300">
+								// ye wale href me go ke jagah apna url dal dena
+							    <a href="https://google.com" target="_blank" rel="noopener noreferrer" class="block mb-4 text-lg text-zinc-300 cursor-pointer hover:underline hover:underline-offset-4 hover:text-blue-500 max-w-full" style="text-decoration-style: dotted; overflow-wrap: break-word;">
+							        <span id="short-url" class="whitespace-normal" style="overflow-wrap:break-word;">
+										dummy url // Yaha pe url dal dena
+							        </span>
+							    </a>
+							    <button id="copy" class="absolute top-4 right-4 bg-white text-secondary-foreground p-2 rounded-full hover:scale-110">
+							        <img alt="copy-icon" src="https://openui.fly.dev/openui/24x24.svg?text=📋️" />
+							    </button>
 								</div>
+
 								<script>
                             document.getElementById("submit").addEventListener("click", async (e) => {
                                 e.preventDefault();
