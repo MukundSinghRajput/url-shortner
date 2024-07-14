@@ -6,8 +6,8 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/MukundSinghRajput/url-shotner/internal/database/controller"
-	"github.com/MukundSinghRajput/url-shotner/internal/database/model"
+	"github.com/MukundSinghRajput/url-shortner/internal/database/controller"
+	"github.com/MukundSinghRajput/url-shortner/internal/database/model"
 )
 
 func GenerateShortUrl(original string) string {

@@ -3,8 +3,8 @@ package controller
 import (
 	"context"
 
-	db "github.com/MukundSinghRajput/url-shotner/internal/database"
-	"github.com/MukundSinghRajput/url-shotner/internal/database/model"
+	db "github.com/MukundSinghRajput/url-shortner/internal/database"
+	"github.com/MukundSinghRajput/url-shortner/internal/database/model"
 	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
 )

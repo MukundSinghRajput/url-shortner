@@ -7,9 +7,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/MukundSinghRajput/url-shotner/internal/database/controller"
-	"github.com/MukundSinghRajput/url-shotner/internal/utils"
-	base "github.com/MukundSinghRajput/url-shotner/internal/view"
+	"github.com/MukundSinghRajput/url-shortner/internal/database/controller"
+	"github.com/MukundSinghRajput/url-shortner/internal/utils"
+	base "github.com/MukundSinghRajput/url-shortner/internal/view"
 )
 
 func (server Server) RegisterRoutes() *http.ServeMux {

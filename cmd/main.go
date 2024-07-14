@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 
-	"github.com/MukundSinghRajput/url-shotner/internal/routes"
+	"github.com/MukundSinghRajput/url-shortner/internal/routes"
 )
 
 func main() {
