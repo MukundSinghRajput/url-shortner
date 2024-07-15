@@ -23,5 +23,5 @@ func init() {
 	}
 
 	fmt.Println("Connected to Mongo DB")
-	Database = client.Database("url-shotner")
+	Database = client.Database("url-shortner")
 }
