@@ -42,12 +42,22 @@ func (server Server) RegisterRoutes() *http.ServeMux {
 	})
 
 	mux.HandleFunc("POST /short", func(w http.ResponseWriter, r *http.Request) {
+		if r.Method != http.MethodPost {
+			http.Error(w, "Method not allowed0", http.StatusMethodNotAllowed)
+			return
+		}
+
 		var data struct {
 			URL string `json:"url"`
 		}
 
 		if err := json.NewDecoder(r.Body).Decode(&data); err != nil {
 			http.Error(w, "Please pass a valid body", http.StatusBadRequest)
+			return
+		}
+
+		if data.URL == "" {
+			http.Error(w, "The url body can't be empty", http.StatusBadRequest)
 			return
 		}
 
