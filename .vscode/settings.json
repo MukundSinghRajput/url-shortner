@@ -1,0 +1,16 @@
+{
+    // Tailwind CSS + Gomponents
+    // It can handle single and multiple lines inside the matches
+    // It can handle double quotes (") and backticks (`)
+    "tailwindCSS.includeLanguages": {
+      "go": "go",
+    },
+    "tailwindCSS.experimental.classRegex": [
+      ["Class\\(([^)]*)\\)", "[\"`]([^\"`]*)[\"`]"], // Class("...") or Class(`...`)
+      ["Classes\\(([^)]*)\\)", "[\"`]([^\"`]*)[\"`]"], // Classes("...") or Classes(`...`)
+      ["Class\\{([^)]*)\\}", "[\"`]([^\"`]*)[\"`]"], // Class{"..."} or Class{`...`}
+      ["Classes\\{([^)]*)\\}", "[\"`]([^\"`]*)[\"`]"], // Classes{"..."} or Classes{`...`}
+      ["Class:\\s*[\"`]([^\"`]*)[\"`]"], // Class: "..." or Class: `...`
+      ["Classes:\\s*[\"`]([^\"`]*)[\"`]"], // Classes: "..." or Classes: `...`
+    ],
+  }

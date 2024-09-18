@@ -1,0 +1,27 @@
+version: '3'
+
+tasks:
+  run:
+    cmds:
+      - clear
+      - echo ▀█▀ █ █▀█ ▀▄▀
+      - echo 
+      - task build
+      - task serve
+    silent: true
+
+  build:
+    cmd: go build -o bin/goblog cmd/main.go
+    silent: true
+  
+  serve:
+    cmd: ./bin/goblog
+    silent: true
+
+  test:
+    cmd: go test -v ./...
+    silent: true
+
+  tidy:
+    cmd: go mod tidy
+    silent: true
