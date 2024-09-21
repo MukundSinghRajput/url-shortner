@@ -11,7 +11,7 @@ func Shotner() []g.Node {
 		h.Div(
 			h.Class("max-w-md w-full space-y-8 bg-white bg-opacity-90 p-10 rounded-xl shadow-2xl transition-all duration-500 ease-in-out transform hover:scale-105"),
 			h.Div(
-				g.Raw(`<h1 class="text-center text-4xl sm:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600 mb-2 animate-pulse">Shrink &nbsp; <span class="inline-block transform rotate-90">:)</span></h1>`),
+				g.Raw(`<h1 class="text-center text-4xl sm:text-5xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-pink-600 mb-2">Shrink &nbsp; <span class="inline-block transform rotate-90">:)</span></h1>`),
 				h.P(
 					h.Class("text-center text-sm text-gray-600"),
 					g.Text("Shorten your URLs with style!"),
